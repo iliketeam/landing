@@ -10,9 +10,9 @@ body{margin:0;overflow-x:hidden;font:17px/1.6 system-ui,-apple-system,"Segoe UI"
 a{color:var(--accent)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
 .wrap{max-width:960px;margin:0 auto;padding:0 24px}
-header{padding:22px 0}
+header{padding:14px 0;background:linear-gradient(110deg,#1b1033,#3b1670 60%,#6a1b6e)}
 .brand{display:inline-block}
-.logo{display:block;width:40px;height:40px;border-radius:10px}
+.logo{display:block;height:36px;width:auto}
 .hero{position:relative;padding:36px 0 24px}
 .hero::before{content:"";position:absolute;z-index:-1;left:0;right:0;top:-100px;height:680px;
  background:radial-gradient(55% 60% at 12% 18%,var(--g1),transparent 70%),radial-gradient(45% 55% at 88% 8%,var(--g2),transparent 70%)}
