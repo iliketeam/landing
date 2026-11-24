@@ -10,8 +10,7 @@ body{margin:0;overflow-x:hidden;font:17px/1.6 system-ui,-apple-system,"Segoe UI"
 a{color:var(--accent)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
 .wrap{max-width:960px;margin:0 auto;padding:0 24px}
-header{padding:20px 0}
-header .wrap{max-width:none;padding:0 20px}
+header{padding:22px 0}
 .brand{display:inline-block}
 .logo{display:block;height:36px;width:auto}
 .logo-w{display:none}
