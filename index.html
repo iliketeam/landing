@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iLike: find people who like what you like</title>
+<meta name="description" content="iLike is an invite-only social app for sharing posts, chatting and finding events.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="./"><img src="assets/icon-192.png" alt="">iLike</a></div></header>
+<main>
+<div class="hero"><div class="wrap">
+<h1>Find people who like what you like.</h1>
+<p class="lead">iLike is a small social app made in Sri Lanka. Post photos and videos, chat, and find events with people who share your interests.</p>
+<a class="btn" href="https://ilike.ilike-team789.workers.dev/">Open iLike</a>
+<p class="note">Invite only for now. <a href="mailto:ilike.team789@gmail.com?subject=iLike%20invite">Email us</a> for an invite.</p>
+</div></div>
+<div class="wrap shots">
+<img src="assets/home.jpg" width="480" height="760" alt="iLike home feed with a photo post">
+<img src="assets/discover.jpg" width="480" height="760" alt="iLike Discover screen with a grid of posts">
+<img src="assets/you.jpg" width="480" height="760" alt="An iLike profile with interests">
+</div>
+<section><div class="wrap">
+<h2>Put it on your phone</h2>
+<p>iLike installs from your browser. There is no app store.</p>
+<ol class="flow">
+<li><b>Get an invite</b><span>Email us and we will send you a code.</span></li>
+<li><b>Open iLike and sign up</b><span>Use Safari on iPhone or Chrome on Android.</span></li>
+<li><b>Add it to your Home Screen</b><span>iPhone: Share, then Add to Home Screen. Android: the menu, then Install app.</span></li>
+</ol>
+<p class="note" id="apk">Android app: coming soon.</p>
+</div></section>
+</main>
+<script>
+fetch("downloads/ilike.apk",{method:"HEAD"}).then(function(r){
+  if(!r.ok)return;
+  document.getElementById("apk").innerHTML='<a class="btn" href="downloads/ilike.apk" download>Download for Android (APK)</a><br>Android may ask you to allow installs from your browser.';
+}).catch(function(){});
+</script>
+<footer><div class="wrap">
+<a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a><a href="mailto:ilike.team789@gmail.com">ilike.team789@gmail.com</a>
+</div></footer>
+</body>
+</html>
